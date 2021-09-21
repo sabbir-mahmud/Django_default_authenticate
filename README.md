@@ -7,6 +7,7 @@ full pure django default authenticate system.you can register new account.you ca
 1. python venv
 2. django
 3. pillow
+4. social-auth-app-django 4.0.0
 
 # run project:
 open terminal and run those commands:
