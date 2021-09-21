@@ -16,7 +16,7 @@ run project * python manage.py runserver
 
 # configure email settings:
 project settings.py:
-# Email Configuration
+Email Configuration
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
