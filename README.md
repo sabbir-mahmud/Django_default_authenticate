@@ -1,10 +1,32 @@
 # Django_default_authenticate
 Dajngo default user authenticate system
 
-full pure django default authenticate system.you can register new account.you can log in your profile.you can update your details.you can change password.you can reset your password with one time token.you can log in with social applications.to used social authenticate system you have to provide app id and app secrect key in setting page.to use reset password you have to provide a valid email and password also keep turn on low secure apps
+full pure django default authenticate system.you can register new account.you can log in your profile.you can update your details.
 
-# if you want to use only accounts application just clone this repo and copy accounts application. install application:
-INSTALLED_APPS = [
-    'apps.accounts.apps.AccountsConfig',
-    'social_django',
-]
+# reqirments:
+1. python venv
+2. django
+3. pillow
+
+# run project:
+open terminal and run those commands:
+active virtual envirment * .\Scripts\activate * cd email_verify
+migrate project * python manage.py makemigrations * python manage.py migrate
+run project * python manage.py runserver
+
+# configure email settings:
+project settings.py:
+# Email Configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'Yourmail@your.com'
+EMAIL_HOST_PASSWORD = 'Your Password'
+
+
+# if you need superuser/admin
+create superuser:
+* python manage.py createsuperuser
+* enter your email
+* enter your password
