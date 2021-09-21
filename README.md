@@ -11,23 +11,35 @@ full pure django default authenticate system.you can register new account.you ca
 
 # run project:
 open terminal and run those commands:
+
 active virtual envirment * .\Scripts\activate * cd email_verify
+
 migrate project * python manage.py makemigrations * python manage.py migrate
+
 run project * python manage.py runserver
 
 # configure email settings:
 project settings.py:
 Email Configuration
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 EMAIL_HOST = 'smtp.gmail.com'
+
 EMAIL_PORT = 587
+
 EMAIL_USE_TLS = True
+
 EMAIL_HOST_USER = 'Yourmail@your.com'
+
 EMAIL_HOST_PASSWORD = 'Your Password'
 
 
 # if you need superuser/admin
 create superuser:
+
 * python manage.py createsuperuser
+* 
 * enter your email
+* 
 * enter your password
