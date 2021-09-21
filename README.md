@@ -39,7 +39,5 @@ EMAIL_HOST_PASSWORD = 'Your Password'
 create superuser:
 
 * python manage.py createsuperuser
-* 
 * enter your email
-* 
 * enter your password
